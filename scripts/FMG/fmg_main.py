@@ -11,8 +11,6 @@ import pandas as pd
 
 import argparse
 
-# Load data
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--HS', type=int, default=20, help='HSWF content percentage (e.g., 20 for 20% HSWF)')
@@ -20,7 +18,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
     HS = args.HS
     GnP = args.GnP
-
+    
+    # Load data
     config = load_config(f"../../config/FMG/{HS}HSWF_FMG_Config.yaml")
 
     df_exp = pd.read_excel(
