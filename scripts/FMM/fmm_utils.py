@@ -214,6 +214,7 @@ def plot_results(df, modified_df, file_path, HS, GnP):
     plt.tight_layout()
     plt.savefig(file_path + f"/{HS}HS_{GnP}_Opt_Params_Variation.png", dpi=300)
     plt.show()
+    plt.close()
 
     _, ax = plt.subplots(int(np.ceil(len(modified_df.columns[:-1]) / 2)), 2, figsize=(15, 15))
     ax = ax.flatten()
@@ -228,6 +229,7 @@ def plot_results(df, modified_df, file_path, HS, GnP):
     plt.tight_layout()
     plt.savefig(file_path + f"/{HS}HS_{GnP}_Opt_Params_Variation_Modified.png", dpi=300)
     plt.show()
+    plt.close()
 
 def plot_opt_results(file_path, HS, GnP, w_freq_exp, Ep_exp, Epp_exp, run_num):
     """Plot optimized storage and loss moduli against experimental data, and the cost history of optimization runs.
@@ -258,9 +260,11 @@ def plot_opt_results(file_path, HS, GnP, w_freq_exp, Ep_exp, Epp_exp, run_num):
     plt.legend()
     plt.savefig(file_path + f"/{HS}HS_{GnP}_Opt_Params_Fit.png", dpi=300)
     plt.show()
+    plt.close()
 
-    plt.loglog(ast.literal_eval(final_results_df.loc[0]['Cost_History']), '*')
+    plt.loglog(ast.literal_eval(final_results_df.loc[run_num]['Cost_History']), '*')
     plt.xlabel('Iteration')
     plt.ylabel('Best Cost')
     plt.savefig(file_path + f"/{HS}HS_{GnP}_Opt_Params_CostHistory.png", dpi=300)
     plt.show()
+    plt.close()
