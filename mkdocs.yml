@@ -1,1 +1,67 @@
 site_name: My Docs
+
+
+site_name: Optimization of Fractional-Order Constitutive Models
+
+site_description: Particle Swarm Optimization of two fractional-order constitutive models (FMG-FMG and FMM-FMG) given the dynamic viscoelastic response of polyurea nanocomposites
+site_author: Arman Khoshnevis
+
+repo_url: https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models
+site_url: https://armankhoshnevis.github.io/Optimization-of-Fractional-Order-Constitutive-Models/
+repo_name: Optimization-of-Fractional-Order-Constitutive-Models
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: blue
+    accent: indigo
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+
+plugins:
+  - search
+  - caption
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths: [.]
+          options:
+            docstring_style: google
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - attr_list
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Home: index.md
+  - Dataset:
+      - Experimental Characterization: experimental_characterization.md
+      - Synthetic Data: synthesized_data.md
+  - Methodology: methodology.md
+  - Configs: config.md
+  - Results Summary: results.md
+  - Contribution:
+      - Contributing: CONTRIBUTING.md
+  - API Reference:
+      - FMG-FMG Model: fmg_api.md
+      - FMM-FMG Model: fmm_api.md
