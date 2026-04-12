@@ -1,0 +1,39 @@
+model_name: "FMM_FMG"
+
+file_path:
+  results: "../../results/FMM/40HSWF"
+
+samples:
+  0.0GnP:
+    usecols: "B:D"
+    skiprows: 79
+    nrows: 120
+    column_names: ["w_freq", "Ep", "Epp"]
+  
+  0.5GnP:
+    usecols: "G:I"
+    skiprows: 74
+    nrows: 143
+    column_names: ["w_freq", "Ep", "Epp"]
+  
+  1.0GnP:
+    usecols: "L:N"
+    skiprows: 74
+    nrows: 146
+    column_names: ["w_freq", "Ep", "Epp"]
+  
+  1.5GnP:
+    usecols: "Q:S"
+    skiprows: 78
+    nrows: 128
+    column_names: ["w_freq", "Ep", "Epp"]
+
+# Parameters: [E_c1, tau_c1, alpha_1, beta_1, E_c2, alpha_2]
+bounds:
+  lower: [1.0e3, 1.0e-3, 0.0, 0.0, 1.0e1, 0.0]
+  upper: [1.0e4, 1.0e1, 1.0, 1.0, 1.0e3, 1.0]
+
+pso:
+  max_it: 1000  # Maximum number of iterations
+  n_pop: 100    # Number of particles in the swarm
+  n_runs: 5     # Number of independent PSO runs
