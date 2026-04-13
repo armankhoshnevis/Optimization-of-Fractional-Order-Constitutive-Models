@@ -18,7 +18,7 @@
         <link rel="prev" href="../synthesized_data/">
       
       
-        <link rel="next" href="../config/">
+        <link rel="next" href="../results/">
       
       
         
@@ -259,13 +259,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../config/" class="md-tabs__link">
+      <a href="../results/" class="md-tabs__link">
         
   
   
     
   
-  Configs
+  Results Summary
 
       </a>
     </li>
@@ -278,13 +278,13 @@
   
   
     <li class="md-tabs__item">
-      <a href="../results/" class="md-tabs__link">
+      <a href="../config/" class="md-tabs__link">
         
   
   
     
   
-  Results Summary
+  Configs
 
       </a>
     </li>
@@ -661,14 +661,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../config/" class="md-nav__link">
+      <a href="../results/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Configs
+    Results Summary
   
 
     
@@ -688,14 +688,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../results/" class="md-nav__link">
+      <a href="../config/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Results Summary
+    Configs
   
 
     
@@ -1050,14 +1050,14 @@
 <h2 id="global-pso-calibration">Global PSO Calibration</h2>
 <p><strong>Algorithm and Objective</strong></p>
 <p>The identification of the fractional model parameters (6 parameters for the FMG-FMG model and 7 for the FMM-FMG model) is performed using a Global Particle Swarm Optimization (PSO) algorithm. The PSO minimizes a scalar multi-objective cost function to concurrently fit the model to both the storage and loss moduli:</p>
-<div class="arithmatex">\[\min_{q} \left( w_1 g_1(q) + w_2 g_2(q) \right)\]</div>
+<div class="arithmatex">\[\min_{\theta} \left( w_1 g_1(\theta) + w_2 g_2(\theta) \right)\]</div>
 <p>where <span class="arithmatex">\(w_1\)</span> and <span class="arithmatex">\(w_2\)</span> are weights, each set to <span class="arithmatex">\(1/2\)</span>, and <span class="arithmatex">\(q\)</span> represents the vector of fitting parameters. </p>
 <p>The cost function for each individual modulus (<span class="arithmatex">\(g_1\)</span> for storage <span class="arithmatex">\(E'\)</span> and <span class="arithmatex">\(g_2\)</span> for loss <span class="arithmatex">\(E''\)</span>) is computed as the sum of the squares of the logarithmic difference between experimental data and model predictions across all data points (<span class="arithmatex">\(N_d\)</span>):</p>
-<div class="arithmatex">\[g_1(q) = \sum_{i=1}^{N_d} \left( \log \frac{E'_{exp,i}}{E'_{model,i}} \right)^2, \quad g_2(q) = \sum_{i=1}^{N_d} \left( \log \frac{E''_{exp,i}}{E''_{model,i}} \right)^2\]</div>
+<div class="arithmatex">\[g_1(\theta) = \sum_{i=1}^{N_d} \left( \log \frac{E'_{exp,i}}{E'_{model,i}} \right)^2, \quad g_2(\theta) = \sum_{i=1}^{N_d} \left( \log \frac{E''_{exp,i}}{E''_{model,i}} \right)^2\]</div>
 <p>This logarithmic approach is essential for accurately capturing the behavior of materials whose moduli vary by several orders of magnitude across the frequency spectrum.</p>
 <p><strong>Relative Error Assessment</strong></p>
 <p>To evaluate the final fitting quality, a normalized relative error is defined as:</p>
-<div class="arithmatex">\[\text{Error} = \sqrt{ \frac{w_1 g_1(q) + w_2 g_2(q)}{w_1 \sum_{i=1}^{N_d} (\log E'_{exp,i})^2 + w_2 \sum_{i=1}^{N_d} (\log E''_{exp,i})^2} } \times 100\]</div>
+<div class="arithmatex">\[\text{Error} = \sqrt{ \frac{\frac{1}{2} g_1(\theta) + \frac{1}{2} g_2(\theta)}{\frac{1}{2} \sum_{i=1}^{N_d} (\log E'_{exp,i})^2 + \frac{1}{2} \sum_{i=1}^{N_d} (\log E''_{exp,i})^2} } \times 100\]</div>
 <p><strong>Settings and Stochasticity</strong></p>
 <p>Each independent optimization run is configured with a swarm population size of 200 and evaluates a total of 6,000 iterations. Because PSO is an inherently stochastic algorithm, the calibration process is independently executed 50 times. The mean values of the optimized parameters across these 50 runs are extracted as the final parameter set, while their standard deviations are calculated to guarantee robustness and ensure the absence of multi-modality in the parameter space.</p>
 

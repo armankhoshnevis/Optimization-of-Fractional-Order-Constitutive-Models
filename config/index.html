@@ -15,10 +15,10 @@
         <link rel="canonical" href="https://armankhoshnevis.github.io/Optimization-of-Fractional-Order-Constitutive-Models/config/">
       
       
-        <link rel="prev" href="../methodology/">
+        <link rel="prev" href="../results/">
       
       
-        <link rel="next" href="../results/">
+        <link rel="next" href="../CONTRIBUTING/">
       
       
         
@@ -255,6 +255,25 @@
   
   
   
+  
+    <li class="md-tabs__item">
+      <a href="../results/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Results Summary
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
     
   
   
@@ -266,25 +285,6 @@
     
   
   Configs
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../results/" class="md-tabs__link">
-        
-  
-  
-    
-  
-  Results Summary
 
       </a>
     </li>
@@ -567,6 +567,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../results/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Results Summary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -705,33 +732,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../results/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Results Summary
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -1090,15 +1090,16 @@
 <li><strong><code>file_path</code></strong>: Contains the directory structure for input experimental data and where the optimized results (parameters and error metrics) will be saved.</li>
 </ul>
 <h3 id="sample-and-data-parsing">Sample and Data Parsing</h3>
-<p>Each sample entry (e.g., <code>0.5GnP</code>) defines how to parse the experimental spreadsheet:
-* <strong><code>usecols</code></strong>: The specific columns in the spreadsheet containing the shifted frequency (<span class="arithmatex">\(\omega a_T\)</span>), storage modulus (<span class="arithmatex">\(E'\)</span>), and loss modulus (<span class="arithmatex">\(E''\)</span>).
-* <strong><code>skiprows</code> / <code>nrows</code></strong>: Parameters to isolate the linear viscoelastic region and exclude experimental data points exhibiting high dispersion.
-* <strong><code>column_names</code></strong>: Standardized labels for the data, typically mapped to <code>["w_freq", "Ep", "Epp"]</code>.</p>
+<p>Each sample entry (e.g., <code>0.5GnP</code>) defines how to parse the experimental spreadsheet:</p>
+<ul>
+<li><strong><code>usecols</code></strong>: The specific columns in the spreadsheet containing the shifted frequency (<span class="arithmatex">\(\omega a_T\)</span>), storage modulus (<span class="arithmatex">\(E'\)</span>), and loss modulus (<span class="arithmatex">\(E''\)</span>).</li>
+<li><strong><code>skiprows</code> / <code>nrows</code></strong>: Parameters to isolate the linear viscoelastic region and exclude experimental data points exhibiting high dispersion.</li>
+<li><strong><code>column_names</code></strong>: Standardized labels for the data, typically mapped to <code>["w_freq", "Ep", "Epp"]</code>.</li>
+</ul>
 <h3 id="optimization-bounds">Optimization Bounds</h3>
 <ul>
 <li><strong><code>bounds</code></strong>: Defines the search space for the PSO algorithm.<ul>
 <li><strong>Lower/Upper</strong>: Arrays specifying the physical limits for model parameters such as characteristic moduli (<span class="arithmatex">\(E_c\)</span>), relaxation times (<span class="arithmatex">\(\tau_c\)</span>), and power-law exponents (<span class="arithmatex">\(\alpha, \beta\)</span>).</li>
-<li>Typical ranges used in studies include <span class="arithmatex">\(0 \le E_{c,1} \le 10^4\)</span> MPa and <span class="arithmatex">\(10^{-3} \le \tau_{c,1} \le 10^2\)</span> s.</li>
 </ul>
 </li>
 </ul>
