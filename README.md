@@ -66,10 +66,10 @@ Please refer to this [link](https://armankhoshnevis.github.io/Optimization-of-Fr
 ## Citation Requirements
 If you use this software, please cite it and its corresponding papers, as:
 
-- Software citation:
-  - APA style: Khoshnevis, A. (2026). Optimization of Fractional-Order Constitutive Models (Version 1.0.0) [Computer software]. https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models
+* **Software citation:**
+  * **APA style:** Khoshnevis, A. (2026). Optimization of Fractional-Order Constitutive Models (Version 1.0.0) [Computer software]. https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models
 
-  - BibTeX entry:<br>
+  * **BibTeX entry:**<br>
     @software{Khoshnevis_PSO_Optimization, <br>
     author = {Khoshnevis, Arman},<br>
     license = {Apache-2.0},<br>
@@ -80,28 +80,28 @@ If you use this software, please cite it and its corresponding papers, as:
     year = {2026}<br>
     }
 
-* **Paper citation**:<br>
-@article{khoshnevis2025stochastic, <br>
-  title={Stochastic Generalized-Order Constitutive Modeling of Viscoelastic Spectra of Polyurea-Graphene Nanocomposites},<br>
-  author={Khoshnevis, Arman and Tzelepis, Demetrios A and Ginzburg, Valeriy V and Zayernouri, Mohsen},<br>
-  journal={Engineering Reports},<br>
-  volume={7},<br>
-  number={9},<br>
-  pages={e70367},<br>
-  year={2025},<br>
-  publisher={Wiley Online Library}<br>
-}
+* **Paper citation:**<br>
+  * @article{khoshnevis2025stochastic, <br>
+      title={Stochastic Generalized-Order Constitutive Modeling of Viscoelastic Spectra of Polyurea-Graphene Nanocomposites},<br>
+      author={Khoshnevis, Arman and Tzelepis, Demetrios A and Ginzburg, Valeriy V and Zayernouri, Mohsen},<br>
+      journal={Engineering Reports},<br>
+      volume={7},<br>
+      number={9},<br>
+      pages={e70367},<br>
+      year={2025},<br>
+      publisher={Wiley Online Library}<br>
+    }
 
-@article{tzelepis2023polyurea, <br>
-  title={Polyurea--graphene nanocomposites—the influence of hard-segment content and nanoparticle loading on mechanical properties}, <br>
-  author={Tzelepis, Demetrios A and Khoshnevis, Arman and Zayernouri, Mohsen and Ginzburg, Valeriy V}, <br>
-  journal={Polymers}, <br>
-  volume={15}, <br>
-  number={22}, <br>
-  pages={4434}, <br>
-  year={2023}, <br>
-  publisher={MDPI} <br>
-}
+  * @article{tzelepis2023polyurea, <br>
+      title={Polyurea--graphene nanocomposites—the influence of hard-segment content and nanoparticle loading on mechanical properties}, <br>
+      author={Tzelepis, Demetrios A and Khoshnevis, Arman and Zayernouri, Mohsen and Ginzburg, Valeriy V}, <br>
+      journal={Polymers}, <br>
+      volume={15}, <br>
+      number={22}, <br>
+      pages={4434}, <br>
+      year={2023}, <br>
+      publisher={MDPI} <br>
+    }
 
 ## Contributions
 This repository is a static archive of the project code. The software is provided "as-is" and is not actively maintained. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
