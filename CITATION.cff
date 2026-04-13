@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Khoshnevis"
+  given-names: "Arman"
+  affiliation: "Michigan State University"
+  orcid: "https://orcid.org/0009-0008-7806-1491"
+title: "Optimization of Fractional-Order Constitutive Models"
+version: 1.0.0
+date-released: 2026-04-07
+url: "https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models"
+abstract: >-
+  This package provides a robust, physics-informed data-driven framework to calibrate generalized-order viscoelastic constitutive models to
+  Dynamic Mechanical Analysis (DMA) master curves of polyurea nanocomposites with varied Hard Segment Weight Fractions (HSWF) and exfoliaded
+  Graphene nano-Platelet (xGnP) weight fractions. It leverages Global Particle Swarm Optimization (PSO) to deterministically identify model
+  parameters (characteristic moduli, relaxation times, and fractional exponents) that best describe the time-temperature superposed (TTS)
+  storage and loss moduli of a material over multiple decades of frequency. By utilizing generalized-order models, the highly parsimoneous
+  framework achieves high fidelity with only a handful of physically interpretable parameters.
+license: Apache-2.0
+keywords:
+  - Particle Swarm Optimization
+  - Fractional-Order Constitutive Models
+  - Linear Viscoelasticity
+  - Dynamic Mechanical Analysis
+  - Polyurea Nanocomposites
