@@ -58,8 +58,8 @@ nav:
       - Experimental Characterization: experimental_characterization.md
       - Synthetic Data: synthesized_data.md
   - Methodology: methodology.md
-  - Configs: config.md
   - Results Summary: results.md
+  - Configs: config.md
   - Contribution:
       - Contributing: CONTRIBUTING.md
   - API Reference:
