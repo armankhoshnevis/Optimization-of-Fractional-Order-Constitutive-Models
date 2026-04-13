@@ -93,7 +93,7 @@ If you use this software, please cite it and its corresponding papers, as:
       year={2025},<br>
       publisher={Wiley Online Library}<br>
     }
-
+  
   * @article{tzelepis2023polyurea, <br>
       title={Polyurea--graphene nanocomposites—the influence of hard-segment content and nanoparticle loading on mechanical properties}, <br>
       author={Tzelepis, Demetrios A and Khoshnevis, Arman and Zayernouri, Mohsen and Ginzburg, Valeriy V}, <br>
