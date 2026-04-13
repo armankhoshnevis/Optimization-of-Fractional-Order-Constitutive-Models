@@ -5,7 +5,7 @@ This package provides a robust, physics-informed data-driven framework to calibr
 # Big Picture
 This repository is a part of a larger project aiming to develop a framework for deterministic and probabilistic calibration of fractional-order constitutive models capturing the linear viscoelastic response of polyurea nanocomposites. Deterministic calibration has been accomplished with PSO, while derivative-based local sensitivity analysis (LSA) and variance-based global sensitivity analysis (GSA) have been conducted as a bridge toward a probabilistic perspective ([LSA & GSA Repository](https://github.com/armankhoshnevis/Sensitivity-Analysis-of-Fractional-Order-Constitutive-Models)). These analyses facilitate factor prioritization and dimensionality reduction by identifying non-influential parameters that can be treated deterministically. Finally, Bayesian inference and uncertainty quantification (UQ) have been performed to conclude this comprehensive model development and analysis framework ([BI & UQ Repository](https://github.com/armankhoshnevis/BI-and-UQ-of-Fractional-Order-Constitutive-Models)). Figure 1 depicts a schematic overview of this framework. This repository focuses specifically on the modeling and optimization components.
 
-![Overview of Deterministic and Probabilistic Calibration of Fractional-Order Constitutive Models](docs/images/Overview.jpg)
+![Overview of Deterministic and Probabilistic Calibration of Fractional-Order Constitutive Models](images/Overview.jpg)
 
 ## Repository Structure
 * **`configs/`**: Configuration files for setting up saving file path, experimental data info, parameter ranges, and optimization parameters.
@@ -54,7 +54,7 @@ python fmg_main.py --HS 20 --GnP '0.0GnP'
 ### Running on a SLURM Cluster
 If you are running the inference on a cluster that uses the SLURM workload manager, a sample batch script (`MCMC_FMG.sh` and `MCMC_FMM.sh`) is provided. The script is pre-configured to activate the UQ_Project conda environment.
 ```bash
-cd script/FMG
+cd scripts/FMG
 sbatch fmg.sb
 ```
 
@@ -64,9 +64,7 @@ sbatch fmg.sb
 Please refer to this [link](https://armankhoshnevis.github.io/Optimization-of-Fractional-Order-Constitutive-Models/) for more comprehensive documentations.
 
 ## Citation Requirements
-If you use this software, please cite it and its corresponding paper, as:
-
-
+If you use this software, please cite it and its corresponding papers, as:
 
 - Software citation:
   - APA style: Khoshnevis, A. (2026). Optimization of Fractional-Order Constitutive Models (Version 1.0.0) [Computer software]. https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models

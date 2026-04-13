@@ -56,7 +56,7 @@ python fmg_main.py --HS 20 --GnP '0.0GnP'
 ### Running on a SLURM Cluster
 If you are running the inference on a cluster that uses the SLURM workload manager, a sample batch script (`MCMC_FMG.sh` and `MCMC_FMM.sh`) is provided. The script is pre-configured to activate the UQ_Project conda environment.
 ```bash
-cd script/FMG
+cd scripts/FMG
 sbatch fmg.sb
 ```
 
@@ -66,9 +66,7 @@ sbatch fmg.sb
 Please refer to this [link](https://armankhoshnevis.github.io/Optimization-of-Fractional-Order-Constitutive-Models/) for more comprehensive documentations.
 
 ## Citation Requirements
-If you use this software, please cite it and its corresponding paper, as:
-
-
+If you use this software, please cite it and its corresponding papers, as:
 
 - Software citation:
   - APA style: Khoshnevis, A. (2026). Optimization of Fractional-Order Constitutive Models (Version 1.0.0) [Computer software]. https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models
