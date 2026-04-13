@@ -42,13 +42,13 @@ $$\tau_{c,1} \sqrt{E_{c,1}} \cong \tau_{c,2} \sqrt{E_{c,2}}$$
 
 The identification of the fractional model parameters (6 parameters for the FMG-FMG model and 7 for the FMM-FMG model) is performed using a Global Particle Swarm Optimization (PSO) algorithm. The PSO minimizes a scalar multi-objective cost function to concurrently fit the model to both the storage and loss moduli:
 
-$$\min_{q} \left( w_1 g_1(q) + w_2 g_2(q) \right)$$
+$$\min_{\theta} \left( w_1 g_1(\theta) + w_2 g_2(\theta) \right)$$
 
 where $w_1$ and $w_2$ are weights, each set to $1/2$, and $q$ represents the vector of fitting parameters. 
 
 The cost function for each individual modulus ($g_1$ for storage $E'$ and $g_2$ for loss $E''$) is computed as the sum of the squares of the logarithmic difference between experimental data and model predictions across all data points ($N_d$):
 
-$$g_1(q) = \sum_{i=1}^{N_d} \left( \log \frac{E'_{exp,i}}{E'_{model,i}} \right)^2, \quad g_2(q) = \sum_{i=1}^{N_d} \left( \log \frac{E''_{exp,i}}{E''_{model,i}} \right)^2$$
+$$g_1(\theta) = \sum_{i=1}^{N_d} \left( \log \frac{E'_{exp,i}}{E'_{model,i}} \right)^2, \quad g_2(\theta) = \sum_{i=1}^{N_d} \left( \log \frac{E''_{exp,i}}{E''_{model,i}} \right)^2$$
 
 This logarithmic approach is essential for accurately capturing the behavior of materials whose moduli vary by several orders of magnitude across the frequency spectrum.
 
@@ -56,7 +56,7 @@ This logarithmic approach is essential for accurately capturing the behavior of 
 
 To evaluate the final fitting quality, a normalized relative error is defined as:
 
-$$\text{Error} = \sqrt{ \frac{w_1 g_1(q) + w_2 g_2(q)}{w_1 \sum_{i=1}^{N_d} (\log E'_{exp,i})^2 + w_2 \sum_{i=1}^{N_d} (\log E''_{exp,i})^2} } \times 100$$
+$$\text{Error} = \sqrt{ \frac{\frac{1}{2} g_1(\theta) + \frac{1}{2} g_2(\theta)}{\frac{1}{2} \sum_{i=1}^{N_d} (\log E'_{exp,i})^2 + \frac{1}{2} \sum_{i=1}^{N_d} (\log E''_{exp,i})^2} } \times 100$$
 
 **Settings and Stochasticity**
 
