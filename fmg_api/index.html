@@ -1291,7 +1291,7 @@ Returns:
 <span class="normal">49</span>
 <span class="normal">50</span>
 <span class="normal">51</span>
-<span class="normal">52</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">constitutive_model</span><span class="p">(</span><span class="n">model_params</span><span class="p">,</span> <span class="n">w_freq</span><span class="p">):</span>
+<span class="normal">52</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">constitutive_model</span><span class="p">(</span><span class="n">model_params</span><span class="p">,</span> <span class="n">w_freq</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Calculate the storage and loss moduli based on the fractional-order constitutive model.</span>
 <span class="sd">    Args:</span>
 <span class="sd">        model_params (array-like): A list of 5 model parameters values [E_c1, tau_c1, alpha_1, E_c2, alpha_2].</span>
@@ -1387,7 +1387,7 @@ Returns:
 <span class="normal">71</span>
 <span class="normal">72</span>
 <span class="normal">73</span>
-<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">objective_function</span><span class="p">(</span><span class="n">model_params</span><span class="p">,</span> <span class="n">w_freq</span><span class="p">,</span> <span class="n">Ep_exp</span><span class="p">,</span> <span class="n">Epp_exp</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]):</span>
+<span class="normal">74</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">objective_function</span><span class="p">(</span><span class="n">model_params</span><span class="p">,</span> <span class="n">w_freq</span><span class="p">,</span> <span class="n">Ep_exp</span><span class="p">,</span> <span class="n">Epp_exp</span><span class="p">,</span> <span class="n">weights</span><span class="o">=</span><span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]):</span>
 <span class="w">    </span><span class="sd">"""Calculate the objective function value for the given model parameters.</span>
 <span class="sd">    Args:        </span>
 <span class="sd">        model_params (array-like): A list of 5 model parameters values [E_c1, tau_c1, alpha_1, E_c2, alpha_2].</span>
@@ -1435,7 +1435,7 @@ Returns:
 <span class="normal">80</span>
 <span class="normal">81</span>
 <span class="normal">82</span>
-<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">load_config</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+<span class="normal">83</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">load_config</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
         <span class="n">config</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
 
@@ -1651,7 +1651,7 @@ Returns:
 <span class="normal">162</span>
 <span class="normal">163</span>
 <span class="normal">164</span>
-<span class="normal">165</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">run_pso</span><span class="p">(</span><span class="n">obj_func</span><span class="p">,</span> <span class="n">pso_params</span><span class="p">,</span> <span class="n">data_args</span><span class="p">):</span>
+<span class="normal">165</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">run_pso</span><span class="p">(</span><span class="n">obj_func</span><span class="p">,</span> <span class="n">pso_params</span><span class="p">,</span> <span class="n">data_args</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Run Particle Swarm Optimization (PSO) to obtain model parameters.</span>
 
 <span class="sd">    Args:</span>
@@ -1889,7 +1889,7 @@ Returns:
 <span class="normal">181</span>
 <span class="normal">182</span>
 <span class="normal">183</span>
-<span class="normal">184</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">modify_results</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">sf</span><span class="p">,</span> <span class="n">file_path</span><span class="p">,</span> <span class="n">HS</span><span class="p">,</span> <span class="n">GnP</span><span class="p">):</span>
+<span class="normal">184</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">modify_results</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">sf</span><span class="p">,</span> <span class="n">file_path</span><span class="p">,</span> <span class="n">HS</span><span class="p">,</span> <span class="n">GnP</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Filter optimization results with LSE greater than sf * min(LSE)</span>
 
 <span class="sd">    Args:</span>
@@ -2062,7 +2062,7 @@ Returns:
 <span class="normal">221</span>
 <span class="normal">222</span>
 <span class="normal">223</span>
-<span class="normal">224</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">plot_results</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">modified_df</span><span class="p">,</span> <span class="n">file_path</span><span class="p">,</span> <span class="n">HS</span><span class="p">,</span> <span class="n">GnP</span><span class="p">):</span>
+<span class="normal">224</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">plot_results</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">modified_df</span><span class="p">,</span> <span class="n">file_path</span><span class="p">,</span> <span class="n">HS</span><span class="p">,</span> <span class="n">GnP</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Plot the variation of optimized model parameters over run numbers.</span>
 
 <span class="sd">    Args:</span>
@@ -2286,7 +2286,7 @@ Returns:
 <span class="normal">259</span>
 <span class="normal">260</span>
 <span class="normal">261</span>
-<span class="normal">262</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">plot_opt_results</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">HS</span><span class="p">,</span> <span class="n">GnP</span><span class="p">,</span> <span class="n">w_freq_exp</span><span class="p">,</span> <span class="n">Ep_exp</span><span class="p">,</span> <span class="n">Epp_exp</span><span class="p">,</span> <span class="n">run_num</span><span class="p">):</span>
+<span class="normal">262</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">plot_opt_results</span><span class="p">(</span><span class="n">file_path</span><span class="p">,</span> <span class="n">HS</span><span class="p">,</span> <span class="n">GnP</span><span class="p">,</span> <span class="n">w_freq_exp</span><span class="p">,</span> <span class="n">Ep_exp</span><span class="p">,</span> <span class="n">Epp_exp</span><span class="p">,</span> <span class="n">run_num</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Plot optimized storage and loss moduli against experimental data, and the cost history of optimization runs.</span>
 
 <span class="sd">    Args:</span>
