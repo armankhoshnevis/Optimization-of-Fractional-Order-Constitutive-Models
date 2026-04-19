@@ -1,0 +1,37 @@
+{
+  "name": "Optimization-of-Fractional-Order-Constitutive-Models",
+  "@context": "https://w3id.org/codemeta/3.0",
+  "author": [
+    {
+      "affiliation": {
+        "name": "Michigan State University",
+        "type": "Organization"
+      },
+      "familyName": "Khoshnevis",
+      "id": "_:author_1",
+      "givenName": "Arman",
+      "type": "Person"
+    }
+  ],
+  "codeRepository": "https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models",
+  "dateCreated": "2026-04-10",
+  "dateModified": "2026-04-07",
+  "description": "This package provides a robust, physics-informed data-driven framework to calibrate generalized-order viscoelastic constitutive models to Dynamic Mechanical Analysis (DMA) master curves of polyurea nanocomposites with varied Hard Segment Weight Fractions (HSWF) and exfoliaded Graphene nano-Platelet (xGnP) weight fractions. It leverages Global Particle Swarm Optimization (PSO) to deterministically identify model parameters (characteristic moduli, relaxation times, and fractional exponents) that best describe the time-temperature superposed (TTS) storage and loss moduli of a material over multiple decades of frequency. By utilizing generalized-order models, the highly parsimoneous framework achieves high fidelity with only a handful of physically interpretable parameters.",
+  "developmentStatus": "inactive",
+  "issueTracker": "https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models/issues",
+  "keywords": [
+    "Particle Swarm Optimization",
+    "Fractional-Order Constitutive Models",
+    "Linear Viscoelasticity",
+    "Dynamic Mechanical Analysis",
+    "Polyurea Nanocomposites"
+  ],
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "programmingLanguage": [
+    "Jupyter Notebook",
+    "Python",
+    "Shell"
+  ],
+  "version": "1.0.0",
+  "type": "SoftwareSourceCode"
+}
