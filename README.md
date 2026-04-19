@@ -105,3 +105,32 @@ If you use this software, please cite it and its corresponding papers, as:
 
 ## Contributions
 This repository is a static archive of the project code. The software is provided "as-is" and is not actively maintained. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+
+## Acknowledgments
+This research and the development of this repository were made possible through the support of the following organizations and individuals:
+
+### Funding & Grants
+
+* **ARO Young Investigator Program (YIP):** Supported under Award No. W911NF-19-1-0444.
+
+* **National Science Foundation (NSF):** Supported under Award No. DMS-1923201.
+
+* **Open Scholarship Fellowship:** Supported by NSF Award No. 2429466 through the MSU Data Hub and by the MSU Institute for Cyber-Enabled Research (ICER). This fellowship specifically supported the open-sourcing of this codebase.
+
+### Principal Investigator
+* [Dr. Mohsen Zayernouri](https://fmath.msu.edu/), Michigan State University.
+
+### Collaborators
+* [Dr. Valeriy Ginzburg](https://www.linkedin.com/in/valeriy-ginzburg-9a8b403a), VVG Physics Consulting LLC.
+
+* [Dr. Demetrios A. Tzelepis](https://orcid.org/0000-0002-3390-612X), Michigan State University.
+
+### Credits & Origins
+* **Original Developer:** This codebase builds upon the initial work developed by Dr. Jorge Suzuki (@suzukijo). The original implementation can be found in [this repository](https://github.com/suzukijo/PU_FractionalModeling).
+* **Algorithmic Foundation:** The implementation of the Particle Swarm Optimization (PSO) algorithm in this repository is adapted from the work of Mostapha Kalami Heris. Heris, M. K. (2015). Particle Swarm Optimization in MATLAB. Yarpiz. Available at: https://yarpiz.com/50/ypea102-particle-swarm-optimization.
+
+- **Original Developer:** This codebase builds upon the initial work developed by [Dr. Jorge Suzuki](https://github.com/suzukijo). The original implementation is available in [this repository](https://github.com/suzukijo/PU_FractionalModeling).
+- **Algorithmic Foundation:** The Particle Swarm Optimization (PSO) implementation in this repository is adapted from work by Mostapha Kalami Heris: *Particle Swarm Optimization in MATLAB* (Yarpiz, 2015), available [here](https://yarpiz.com/50/ypea102-particle-swarm-optimization).
+
+### Computing Resources
+We gratefully acknowledge the Michigan State University Institute for Cyber-Enabled Research (ICER) for providing the High-Performance Computing (HPC) resources used to perform the simulations and analyses in this work.
