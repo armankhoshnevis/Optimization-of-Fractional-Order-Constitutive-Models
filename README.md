@@ -67,6 +67,8 @@ Please refer to this [link](https://armankhoshnevis.github.io/Optimization-of-Fr
 If you use this software, please cite it and its corresponding papers, as:
 
 * **Software citation:**
+  * **Zenodo:** [![DOI](https://zenodo.org/badge/1207277966.svg)](https://doi.org/10.5281/zenodo.19670490)
+  
   * **APA style:** Khoshnevis, A. (2026). Optimization of Fractional-Order Constitutive Models (Version 1.0.0) [Computer software]. https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models
 
   * **BibTeX entry:** <br>
