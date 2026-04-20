@@ -69,14 +69,15 @@ If you use this software, please cite it and its corresponding papers, as:
 * **Software citation:**
   * **Zenodo:** [![DOI](https://zenodo.org/badge/1207277966.svg)](https://doi.org/10.5281/zenodo.19670490)
   
-  * **APA style:** Khoshnevis, A. (2026). Optimization of Fractional-Order Constitutive Models (Version 1.0.0) [Computer software]. https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models
+  * **APA style:** Khoshnevis, A. (2026). Optimization-of-Fractional-Order-Constitutive-Models (Version 1.0.0) [Computer software]. https://doi.org/https://doi.org/10.5281/zenodo.19670491
 
   * **BibTeX entry:** <br>
-    @software{Khoshnevis_Optimization_of_Fractional, <br>
+    @software{Khoshnevis_Optimization-of-Fractional-Order-Constitutive-Models_2026, <br>
     author = {Khoshnevis, Arman},<br>
+    doi = {https://doi.org/10.5281/zenodo.19670491},<br>
     license = {Apache-2.0},<br>
-    month = mar,<br>
-    title = {{Optimization of Fractional-Order Constitutive Models}},<br>
+    month = apr,<br>
+    title = {{Optimization-of-Fractional-Order-Constitutive-Models}},<br>
     url = {https://github.com/armankhoshnevis/Optimization-of-Fractional-Order-Constitutive-Models},<br>
     version = {1.0.0},<br>
     year = {2026}<br>
